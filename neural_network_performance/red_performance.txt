@@ -1,0 +1,50 @@
+1 Principal Component
+loss: 0.7878735230433186 - accuracy: 0.85691947 - val_loss: 0.8133273661136627 - val_accuracy: 0.859375
+Variance captured in PCA (%): 28.173931278817356
+
+2 Principal Component
+loss: 0.7925067212173397 - accuracy: 0.8577013 - val_loss: 0.7314521372318268 - val_accuracy: 0.859375
+Variance captured in PCA (%): 45.68220118429408
+
+3 Principal Component
+loss: 0.7923359444031406 - accuracy: 0.8577013 - val_loss: 0.7832995533943177 - val_accuracy: 0.859375
+Variance captured in PCA (%): 59.77805108224628
+
+4 Principal Component
+loss: 0.7155090270795517 - accuracy: 0.8389367 - val_loss: 0.7302544116973877 - val_accuracy: 0.862500011920929
+Variance captured in PCA (%): 70.80743772386742
+
+5 Principal Component
+loss: 0.7202207896278835 - accuracy: 0.8162627 - val_loss: 0.7799908578395843 - val_accuracy: 0.859375
+Variance captured in PCA (%): 79.52827473610358
+
+6 Principal Component
+loss: 0.7104127096701078 - accuracy: 0.82329947 - val_loss: 0.7198534846305847 - val_accuracy: 0.887499988079071
+Variance captured in PCA (%): 85.52471350764364
+
+7 Principal Component
+loss: 0.7934757429608337 - accuracy: 0.8577013 - val_loss: 0.7787649631500244 - val_accuracy: 0.859375
+Variance captured in PCA (%): 90.83190640939529
+
+8 Principal Component
+loss: 0.7037239654442591 - accuracy: 0.84206414 - val_loss: 0.7691075026988983 - val_accuracy: 0.8656250238418579
+Variance captured in PCA (%): 94.67696731537684
+
+9 Principal Component
+loss: 0.79271194164039 - accuracy: 0.8577013 - val_loss: 0.756070590019226 - val_accuracy: 0.859375
+Variance captured in PCA (%): 97.81007746827459
+
+10 Principal Component
+loss: 0.792547711410776 - accuracy: 0.8577013 - val_loss: 0.7695049524307251 - val_accuracy: 0.859375
+Variance captured in PCA (%): 99.45856080071009
+
+11 Principal Component
+loss: 0.7925532312482665 - accuracy: 0.8577013 - val_loss: 0.8060816466808319 - val_accuracy: 0.859375
+Variance captured in PCA (%): 99.99999999999999
+
+11 Raw Data - Red
+loss: 0.7133788683621375 - accuracy: 0.81704456 - val_loss: 0.723732978105545 - val_accuracy: 0.862500011920929
+
+4 Columns Raw Data - Red
+loss: 0.7392431586584698 - accuracy: 0.8193902 - val_loss: 0.7875701725482941 - val_accuracy: 0.8656250238418579
+

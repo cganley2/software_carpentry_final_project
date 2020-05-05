@@ -1,0 +1,50 @@
+1 Principal Component
+loss: 0.6147608327098864 - accuracy: 0.77973455 - val_loss: 0.6254587102909477 - val_accuracy: 0.7632653117179871
+Variance captured in PCA (%): 29.293217187564935
+
+2 Principal Component
+loss: 0.6085056981424581 - accuracy: 0.78075546 - val_loss: 0.5975382488601062 - val_accuracy: 0.7734693884849548
+Variance captured in PCA (%): 43.61358019739004
+
+3 Principal Component
+loss: 0.585961721635948 - accuracy: 0.7815212 - val_loss: 0.6141969938667453 - val_accuracy: 0.7724489569664001
+Variance captured in PCA (%): 54.71968328697157
+
+4 Principal Component
+loss: 0.6575210292525533 - accuracy: 0.7794793 - val_loss: 0.6480560820929858 - val_accuracy: 0.7795918583869934
+Variance captured in PCA (%): 63.978977420339476
+
+5 Principal Component
+loss: 0.5551348516014901 - accuracy: 0.79402757 - val_loss: 0.55814296955965 - val_accuracy: 0.8030612468719482
+Variance captured in PCA (%): 72.82747359911349
+
+6 Principal Component
+loss: 0.5540279271561251 - accuracy: 0.7963247 - val_loss: 0.5339008905449693 - val_accuracy: 0.8040816187858582
+Variance captured in PCA (%): 81.36148733941042
+
+7 Principal Component
+loss: 0.566353984789437 - accuracy: 0.7942828 - val_loss: 0.5531436502933502 - val_accuracy: 0.7887755036354065
+Variance captured in PCA (%): 87.9669239116744
+
+8 Principal Component
+loss: 0.5411709975289593 - accuracy: 0.7963247 - val_loss: 0.6218991320960375 - val_accuracy: 0.7469387650489807
+Variance captured in PCA (%): 93.41563736297455
+
+9 Principal Component
+loss: 0.5479284293375313 - accuracy: 0.8095967 - val_loss: 0.5679678662699096 - val_accuracy: 0.7969387769699097
+Variance captured in PCA (%): 97.18057977884465
+
+10 Principal Component
+loss: 0.5422290139748406 - accuracy: 0.8006636 - val_loss: 0.5896432579780112 - val_accuracy: 0.7877551317214966
+Variance captured in PCA (%): 99.8122810385654
+
+11 Principal Component
+loss: 0.5498412510550345 - accuracy: 0.80015314 - val_loss: 0.5564301651351305 - val_accuracy: 0.7948979735374451
+Variance captured in PCA (%): 100.00000000000003
+
+11 Raw Data - White
+loss: 0.5386329194366354 - accuracy: 0.80168456 - val_loss: 0.5208124722753252 - val_accuracy: 0.800000011920929
+
+4 Columns Raw Data - White
+loss: 0.5624399214085418 - accuracy: 0.79402757 - val_loss: 0.5592828682490758 - val_accuracy: 0.7989795804023743
+
