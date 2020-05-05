@@ -14,8 +14,8 @@ def generate_models():
 
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-    filepath_red = './winequality-red.csv'
-    filepath_white = './winequality-white.csv'
+    filepath_red = './raw_data/winequality-red.csv'
+    filepath_white = './raw_data/winequality-white.csv'
 
     red_wine_df = di(filepath_red)
     red_pc_dict = pc_analysis(red_wine_df)
