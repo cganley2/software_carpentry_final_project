@@ -5,6 +5,7 @@ from save_output import save_output
 import os
 import pandas as pd
 
+
 def generate_models():
     '''
     This function generates 26 neural network models; 13 for each type of wine:

@@ -169,25 +169,3 @@ def build_network(x_train, y_train, x_test, y_test, components):
 
     # Return the model and history
     return model, history
-
-
-if __name__ == '__main__':
-
-    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-    filepath_red = './winequality-red.csv'
-    filepath_white = './winequality-white.csv'
-    wine_df = di(filepath_red)
-
-    pc_dict = pc_analysis(wine_df, plot=False)
-
-    # test_pc_dict = {'11 PC': [1, wine_df, quality]}
-    # test_pc_dict = {'1 PC': pc_dict['1 PC']}
-
-    model_list = nn(pc_dict)
-
-    quality = pd.DataFrame(wine_df['quality'])
-    quality.columns = ['quality']
-    del wine_df['quality']
-    unadulterated_dict = {'11 raw data': [1, wine_df, quality]}
-
-    # model_list = nn(unadulterated_dict)
