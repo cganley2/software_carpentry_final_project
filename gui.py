@@ -24,9 +24,9 @@ def gui():
 
     # TOP LABEL #
     top_label = tk.StringVar()
-    top_label.set('Enter a number in each box between 0 and 1 (inclusive) that'
-                  + '\n corresponds to the relative amount of each sensory'
-                  + '\n input that you desire in your wine.')
+    top_label.set('Enter a WHOLE percentage in each box between 0 and 100'
+                  + '\n (inclusive) that corresponds to the relative amount of'
+                  + '\n each sensory input that you desire in your wine.')
     top_label = tk.Label(master=main_window, textvariable=top_label)
     top_label.place(x=x_label_start, y=100)
 
@@ -107,36 +107,36 @@ def gui():
             raise ValueError('You must select a wine type (Red/White)')
 
         if fixed_acidity.get().isdigit():
-            if not (0 <= float(fixed_acidity.get()) <= 1):
+            if not (0 <= float(fixed_acidity.get()) <= 100):
                 sensory_dict['fixed acidity'] = False
-                raise ValueError('Fixed acidity not in range [0, 1]')
+                raise ValueError('Fixed acidity not in range [0, 100]')
         else:
             sensory_dict['fixed acidity'] = False
-            raise TypeError('Fixed acidity must be a FLOAT in range [0, 1]')
+            raise TypeError('Fixed acidity must be an INT in range [0, 100]')
 
         if sourness.get().isdigit():
-            if not (0 <= float(sourness.get()) <= 1):
+            if not (0 <= float(sourness.get()) <= 100):
                 sensory_dict['sourness'] = False
-                raise ValueError('Sourness not in range [0, 1]')
+                raise ValueError('Sourness not in range [0, 100]')
         else:
             sensory_dict['sourness'] = False
-            raise TypeError('Sourness must be a FLOAT in range [0, 1]')
+            raise TypeError('Sourness must be an INT in range [0, 100]')
 
         if sweetness.get().isdigit():
-            if not (0 <= float(sweetness.get()) <= 1):
+            if not (0 <= float(sweetness.get()) <= 100):
                 sensory_dict['sweetness'] = False
-                raise ValueError('Sweetness not in range [0, 1]')
+                raise ValueError('Sweetness not in range [0, 100]')
         else:
             sensory_dict['sweetness'] = False
-            raise TypeError('Sweetness must be a FLOAT in range [0, 1]')
+            raise TypeError('Sweetness must be an INT in range [0, 100]')
 
         if alcohol.get().isdigit():
-            if not (0 <= float(alcohol.get()) <= 1):
+            if not (0 <= float(alcohol.get()) <= 100):
                 sensory_dict['alcohol'] = False
-                raise ValueError('Alcohol not in range [0, 1]')
+                raise ValueError('Alcohol not in range [0, 100]')
         else:
             sensory_dict['alcohol'] = False
-            raise TypeError('Alcohol must be a FLOAT in range [0, 1] \n\n'
+            raise TypeError('Alcohol must be an INT in range [0, 100] \n\n'
                             + 'Illegal input type (str) ... \n\n'
                             + 'Alerting authorities ... \n\n'
                             + 'The police are on their way to your location.')
@@ -145,10 +145,11 @@ def gui():
         # load model and make prediction
         if all(value for value in sensory_dict.values()):
             model = im(wine.get())
-            p = np.array([[fixed_acidity.get(),
-                           sourness.get(),
-                           sweetness.get(),
-                           alcohol.get()]])
+            p = np.array([[float(fixed_acidity.get()),
+                           float(sourness.get()),
+                           float(sweetness.get()),
+                           float(alcohol.get())]])
+            p = p * 0.01
 
             prediction = model.predict(p)
             quality = str(list(prediction[0]).index(max(prediction[0])) + 1)
